@@ -1,0 +1,34 @@
+PASOS PARA USAR GIT
+//las barras hacen referencia a los comentarios|
+//el archivos ejemplo.txt es un ejemplo de archivo|
+//esta barra | sirve para indicar el final de un paso
+
+apt-get install git|
+2)git init //en la carpeta que se desee intalar git|
+3)git add ejemplo.txt //para añadir el archivo al staging|
+4)git commit ejemplo.txt // o si se quiere toda la carpeta “.”| -m “aca va el mensaje que se adjunta al archivo” //para subir el archivo o sus cambios|
+OTROS COMANDOS IMPORTANTES
+
+#git status //para ver el estado de los archivos |
+#git show //para ver los archivos|
+#git diff // para comparar versiones de dos archivos|
+#rm --cached ejemplo.txt //para remover el archivo de git|
+#rm --force ejemplo.txt //para remover el archivo del git y del disco duro|
+#git log ejemplo.txt //para ver las diferentes actualizaciones de un archivo|
+#git checkout |numero de version| ejemplo.txt //para ver la version vieja de un archivo|
+#git checkout master ejemplo.txt //para volver a la version mas reciente|
+#git reset --hard //para volver en el tiempo pero borrando todo incluso en staging|
+#git reset --soft // para volver en el tiempo sin perder el staging|
+#git reset HEAD ejemplo.txt //nos permite sacar un archivo del staging para no enviarlo al git|
+#git checkout cabecera //para cambiarse de la rama master a la cabecera|
+USAR GITHUB
+
+#git clone url //para traer el repositorio desde el servidor remoto|
+#git fetch //para traer los archivos del servidor al repositorio local |
+#git merge //para actualizar y fucionar el directorio de trabajo|
+#git pull //union de fetch y merge|
+#git push //sirve para subir todos los archivos a tu repositorio remoto|
+#git remote add origin url //esto sirve para agregar algo a github|
+#git pull origin master //para bajar los archivos a tu pc|
+#git push origin master //para subir las cosas a github|
+#git pull origin master --allow-unrelated-histories //para hacer el merge fusionado lo de tu pc con lo de github|
