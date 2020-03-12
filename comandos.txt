@@ -32,3 +32,71 @@ USAR GITHUB
 #git pull origin master //para bajar los archivos a tu pc|
 #git push origin master //para subir las cosas a github|
 #git pull origin master --allow-unrelated-histories //para hacer el merge fusionado lo de tu pc con lo de github|
+
+//Nueva lista
+Pueden guardarlas en evernote
+- git merge “cabecera”: Estando en la rama master, escribo git merge nombre rama, en este ejemplo la rama se llama cabecera y se trae la rama cabecera.
+- git checkout “nombre”: Para cambiar entre ramas, log, o el archivo master
+**- git branch: **Para crear una rama del documento
+- git commit -a: Igual que git commit -am “Comentario” pero este dispara una interfaz donde coloco el comentario, y para guardar esc+shift+z
+- git commit -am “Comentario”: Para hacer commit a archivos a los que ya le he realizado el add
+- git clone url_del_servidor_remoto: Nos permite descargar los archivos de la última versión de la rama principal y todo el historial de cambios en la carpeta .git.
+- git push: Luego de hacer git add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.
+- git fetch: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).
+- git merge: También usamos el comando git fetch con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
+- git pull: Básicamente, git fetch y git merge al mismo tiempo.
+- git reset HEAD: Este es el comando para sacar archivos del área de Staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.
+- git reset --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit.
+- git reset --hard: Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.
+- git rm --cached: Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro.
+- git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+- git checkout master nombredearhivo.extensión: Ver la versión del master, y ya no la primera versión. Es decir la última versión
+**- git checkout “código log” nombredearhivo.extensión: **Ver primera versión del archivo, si no se hace commit no se graba el cambio, pero lo puedo visualizar mientras
+- git log --stat: Para observar cambios específicos que se hicieron y en cuales archivos a partir del commit (se ve los cambios en bite y/o carpeta)
+- git reset “Código de un log” --hard: Para volver a una versión del archivo de forma literal a como estaba antes. Se borran las otras modificaciones
+- git reset “Código de un log” --soft: Para volver a una versión del archivo dejando  lo que que está en el staging (comando add, ubicado en la RAM)
+- git reset “Código de un log”: Para volver a una versión anterior.
+- git diff “código de un log” “código de otro log”: Es para identificar los cambios que hay entre una versión y otra. El código del log se ubica con git log nombredearchivo.extensión. El orden importa, según el orden en que coloque el log me va a indicar si se agrega una línea o si se quita. El primero en colocar es el que va a tomar como original
+- VIM: El editor de texto, la pantalla que aparece cuando se hace commit sin comentar
+**- Esc + shift + zz **(para salir y guardar de la pantalla que aparece cuando no se hacen comentarios) + zq (para salir sin guardar de la pantalla que aparece cuando no se hacen comentarios)
+- git show nombredearchivo.extensión:: Muestra todos los cambios realizados al archivo
+- git log nombredearchivo.extensión: Trae todos los commit realizados en el archivo
+- git add . : Añadir todos los cambios al stage (RAM)
+- git config --global user.email "tu@email.com": Para identificar el nombre y el correo de la ersona que va a hacer los cambios
+- git config --global user.name “Tu Nombre”
+
+Con un solo- se usan las letras, con dos – se usan palabras
+- git config: Ver toda la configuración de git
+- git config --list: La lista de los elementos configurados
+- git config --list --show-origin: Para ver donde están las configuraciones guardadas
+****- git commit -m “”: para subir un commit con un mensaje
+- git rm --cached: Para borrar un archivo cuando ha sido añadido sólo con el comando add rm --cached nombrearchivo.extensión saca al archivo de la ram que la mantiene si no hay commint
+- git status: Para chequear el estado de una carpeta respecto a los cambios del control de versiones
+**- git ini: **Para iniciar una carpeta con el control de versiones de repositorio
+**- pwd: **Nos muestra la ruta de carpetas en la que te encuentras ahora mismo.
+- mkdir: Nos permite crear carpetas (por ejemplo, mkdir Carpeta-Importante).
+- touch: Nos permite crear archivos (por ejemplo, touch archivo.txt).
+- rm: Nos permite borrar un archivo o carpeta (por ejemplo, rm archivo.txt). Mucho cuidado con este comando, puedes borrar todo tu disco duro.
+- cat: Ver el contenido de un archivo (por ejemplo, cat nombre-archivo.txt).
+- ls: Nos permite cambiar ver los archivos de la carpeta donde estamos ahora mismo. Podemos usar uno o más argumentos para ver más información sobre estos archivos (los argumentos pueden ser – + el nombre del argumento o - + una sola letra o shortcut por cada argumento).
+
+- ls -a: Mostrar todos los archivos, incluso los ocultos.
+
+- ls -l: Ver todos los archivos como una lista.
+
+cd: Nos permite navegar entre carpetas.
+
+- cd /: Ir a la ruta principal:
+
+- cd o cd ~: Ir a la ruta de tu usuario
+
+- cd carpeta/subcarpeta: Navegar a una ruta dentro de la carpeta donde estamos ahora mismo.
+
+- cd … (cd + dos puntos): Regresar una carpeta hacia atrás.
+
+Si quieres referirte al directorio en el que te encuentras ahora mismo puedes usar cd . (cd + un punto).
+history: Ver los últimos comandos que ejecutamos y un número especial con el que podemos repetir su ejecución.
+
+! + número: Ejecutar algún comando con el número que nos muestra el comando history (por ejemplo, !72).
+
+clear: Para limpiar la terminal. También podemos usar los atajos de teclado Ctrl + L o Command + L.
